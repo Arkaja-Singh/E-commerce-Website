@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ecommerce  About Us</title>
+	
+	<link rel="stylesheet" type="text/css" href="style1.css">
+
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
+
+	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+
+</head>
+<body>
+
+<nav class="nav nav_top">
+		<div class="logo">
+			<a href="index2.html"><img src="Product.jpeg" width="150"></a>
+		</div>
+		<div class="nav_side">
+			<a href="about.html">About us</a>
+			<a href="services.html">Services</a>
+			<a href="blog.html">Blogs</a>
+			<a href="contactus.html">Contact</a>
+			<a href=" ">Login/Register</a>
+		</div>
+	</nav>
+
+	<div class="about_us">
+		<h2>About Us</h2>
+		<div class="about_content">
+			<p>online shopping or e-shopping is a form of electronic commerce which allows consumers to directly buy goods or services from a seller over the Internet using a web-browser. English entrepreneur Michael Aldrich invented online shopping in 1979. His system connected a modified domestic TV to a real-time transaction processing computer via domestic telephone line.The key drivers for the boost of online shopping sector are increasing broadband internet penetration/usage, rising standard of living with high disposable income, availability of much wider product range compared to what is available in the market, busy lifestyle leading to lack of time for offline shopping and relatively lower prices of the products. Generally, higher levels of education, metropolitan cities and personal income correspond to more favourable perceptions of shopping online. Delhi ranks first in e-shopping followed by Mumbai and Ahmedabad.Technology is more often accompanied with disadvantages and online shopping is no exception. The internet is prone to cybercrimes and online shopping is facilitated through this internet only. Cyber criminals like identity thieves prowl the internet looking for unsuspecting targets to steal their credit card details. Armed with sophisticated hacking and tracking software, they break the security protocols and access confidential credit card information which they use to their benefit. Many people are thus very wary of online shopping because of the risks involved in them.</p>
+		
+<hr>
+
+		</div>
+		
+		<h2>Our Mission</h2>
+		<p>There are numerous advantages of online shopping, let’s take an insight into it. Online shopping is the best option for people who do not have much time and are busy in their office and business work. It is a convenient way for the people who cannot withstand crowded places and malls for shopping so they can sit at their home or office and can order anything anytime. Online shopping offers a vast variety of options which is not possible with physical shopping. You can browse through different websites and can choose the product according to your requirements. Online shopping does not require physical cash and you can make payments through your debit or credit cards although you have an option of cash on delivery.</p>
+	</div>
+
+<div class="feed">
+	<h2>Write a review</h2>
+	<div class="feed_form">
+		<form name="submit-googlesheet" method="post">
+			<input type="text" name="Name" placeholder="Name"><br>
+			<input type="email" name="Email Id" placeholder="Email ID"><br>
+			<input type="number" name="Number" placeholder="Contact Number"><br>
+			<textarea rows="5" cols="7" name="Review" placeholder="Write Your Review"></textarea><br>
+			<button type="submit">Submit</button>
+		</form>
+	</div>
+</div>
+
+<footer>
+	<div class="footer_logo">
+		<a href="index2.html"><img src="Product.jpeg" width="150"></a>
+	</div>
+	<div class="pages">
+		<h3>Pages</h3>
+		<a href="about.html">About us</a>
+		<a href="services.html">Services</a>
+		<a href="blog.html">Blogs</a>
+		<a href="">Login</a>
+		<a href="">Sign Up</a>
+	</div>
+	<div class="doc">
+		<h3>Documents</h3>
+		<a href="">Privacy Policy</a>
+		<a href="">Terms Of Use</a>
+		<a href="">Refund Policy</a>
+	</div>
+	<div class="social">
+		<h3>Follow Us</h3>
+		<a href=""><i class="fab fa-facebook" ></i></a>
+		<a href="https://www.linkedin.com/in/arkaja-singh-2789071aa/" target="_black"><i class="fab fa-linkedin" ></i></a>
+		<a href="https://www.instagram.com/arkaja_singh__/" target="_black"><i class="fab fa-instagram"></i></a>
+		<a href=""><i class="fab fa-twitter"></i></a>
+	</div>
+	<div class="contact">
+		<h3>Contact Us</h3>
+		<a href="https://api.Whatsapp.com/send?phone=+919369277597" target="_black"><i class="fab fa-whatsapp"></i></a>
+		<a href="tel: +919369277597"><i class="fas fa-phone"></i></a>
+		<a href="mailto: arkajasingh13@gmail.com"><i class="far fa-envelope"></i></a>
+	</div>
+	<hr>
+	<p>Copyright &copy; 2021 Arkaja. All rights reserved</p>
+</footer>
+
+
+<script type="text/javascript">
+const scriptURL = 'https://script.google.com/macros/s/AKfycbx-j_QHF4tpzjMRwMOoybk5R596UphiXtB5WlGskrGh5OhdzVDI5TpllNN7kjMoq_yD/exec'
+            const form = document.forms['submit-googlesheet']
+           
+            form.addEventListener('submit', e => {
+              e.preventDefault()
+              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => alert("Thankyou Will get back to You Soon..."))
+                .catch(error => console.error('Error!', error.message))
+            })
+          
+</script>
+</body>
+</html>
